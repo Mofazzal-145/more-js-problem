@@ -20,6 +20,7 @@ function removeDuplicate(names){
     } 
     return unique;
 }
+
 const uniqueNames = removeDuplicate(names);
 console.log(uniqueNames);
 
