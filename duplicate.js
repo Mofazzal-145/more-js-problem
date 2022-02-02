@@ -7,14 +7,17 @@ function removeDuplicate(names){
   /*   for(i = 0; i < names.length; i++){
         const element = names [i];
         // console.log(element);
-    } */
+        if(unique.indexOf(element) == -1){
+            unique.push(element);
+        }
+    }  */
     // for of loop
-    for(const element of names){
+     for(const element of names){
         // console.log(element);
         if(unique.indexOf(element) == -1){
             unique.push(element);
         }
-    }
+    } 
     return unique;
 }
 const uniqueNames = removeDuplicate(names);
